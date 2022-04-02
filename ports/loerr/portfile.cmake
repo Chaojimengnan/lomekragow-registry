@@ -10,7 +10,7 @@ vcpkg_from_github(
 )
 
 # 将头文件和许可证复制到vcpkg包目录中
-file(INSTALL ${SOURCE_PATH}/include DESTINATION ${CURRENT_PACKAGES_DIR}/include)
+file(INSTALL ${SOURCE_PATH}/include/loerr DESTINATION ${CURRENT_PACKAGES_DIR}/include)
 file(INSTALL ${SOURCE_PATH}/LICENSE DESTINATION ${CURRENT_PACKAGES_DIR}/share/loerr RENAME copyright)
 # vcpkg_copy_pdbs()
 
