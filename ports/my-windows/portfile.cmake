@@ -4,8 +4,8 @@
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO Chaojimengnan/my-windows
-    REF edbee76b5b6fe6ce099bf8c291f7dabedace9952 # 1.0.8
-    SHA512 57aa28366ca4d781ed0d198ca2d71927d3525de59db5952bc5759d36d8d443d8930529864324c86e490e89c491444c67a7d5a203ebcc88642dad8f9bb803b699
+    REF 7452b21023fedee3c0cb4cd1bd374ab44dc9399d # 1.0.9
+    SHA512 50f34d3cd4826cc5f12fddb14283438c8cc9798e313f3fc8901f4a76098f7d2aabab42bffea947aa38d3ad52902ad68ed8a241ca4c2d976ed9d09e4c7fe5a385
     HEAD_REF master
 )
 
