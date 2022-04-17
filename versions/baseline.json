@@ -1,16 +1,16 @@
 {
     "default": {
-        "my-windows":{
-            "baseline" : "1.0.8",
-            "port-version" : 0
+        "my-windows": {
+            "baseline": "1.0.9",
+            "port-version": 0
         },
-        "auto-tools":{
-            "baseline" : "0.0.3",
-            "port-version" : 0
+        "auto-tools": {
+            "baseline": "0.0.3",
+            "port-version": 0
         },
-        "loerr":{
-            "baseline" : "0.0.1",
-            "port-version" : 1
+        "loerr": {
+            "baseline": "0.0.1",
+            "port-version": 1
         }
     }
 }
