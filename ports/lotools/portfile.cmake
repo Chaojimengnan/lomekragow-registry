@@ -4,8 +4,8 @@
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO Chaojimengnan/lotools
-    REF  # 
-    SHA512 
+    REF 404ac4f8d68ec2a26167e266604d217276e5ece1 # 0.0.1
+    SHA512 aa157648b99fcc79677f49d174f0812844cd49a54dbabe00435151e151456172d94baa64463233ab4684ea95bdabcb9745e9e50d5a10a62ad23604145ad205ac
     HEAD_REF master
 )
 
