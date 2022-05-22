@@ -1,6 +1,6 @@
 {
     "name": "lotools",
-    "port-version": 0,
+    "port-version": 1,
     "description": "Lomekragow的模板工具库",
     "homepage": "https://github.com/Chaojimengnan/lotools",
     "dependencies": [],

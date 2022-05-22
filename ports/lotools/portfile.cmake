@@ -9,8 +9,25 @@ vcpkg_from_github(
     HEAD_REF master
 )
 
-# 将头文件和许可证复制到vcpkg包目录中
-file(INSTALL ${SOURCE_PATH}/include/lotools DESTINATION ${CURRENT_PACKAGES_DIR}/include)
-file(INSTALL ${SOURCE_PATH}/LICENSE DESTINATION ${CURRENT_PACKAGES_DIR}/share/lotools RENAME copyright)
-# vcpkg_copy_pdbs()
+# 将我们自己的CMakeLists.txt复制到目录，因为这个是特别为vcpkg准备的
+file(COPY ${CMAKE_CURRENT_LIST_DIR}/CMakeLists.txt DESTINATION ${SOURCE_PATH})
 
+# 配置cmake
+vcpkg_configure_cmake(
+    SOURCE_PATH ${SOURCE_PATH}
+    PREFER_NINJA
+)
+
+# 构建并安装
+vcpkg_install_cmake()
+
+# 修正配置文件
+vcpkg_fixup_cmake_targets()
+
+# 生成的库分为debug和release，但是头文件仅需要保留一份，所以删除debug/include
+# 又由于这是一个仅头文件库，所以不需要debug，所以直接删除
+file(REMOVE_RECURSE "${CURRENT_PACKAGES_DIR}/debug")
+file(INSTALL ${SOURCE_PATH}/LICENSE DESTINATION ${CURRENT_PACKAGES_DIR}/share/lotools RENAME copyright)
+
+# 复制usage
+file(COPY "${CMAKE_CURRENT_LIST_DIR}/usage" DESTINATION "${CURRENT_PACKAGES_DIR}/share/${PORT}")
