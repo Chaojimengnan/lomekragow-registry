@@ -1,7 +1,7 @@
 {
   "name": "loerr",
-  "version": "0.0.1",
-  "port-version": 1,
+  "version-string": "0.0.1",
+  "port-version": 2,
   "description": "专门用于使用错误码处理错误的程序,它是一个仅头文件库",
   "homepage": "https://github.com/Chaojimengnan/loerr",
   "dependencies": []

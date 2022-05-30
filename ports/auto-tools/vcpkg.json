@@ -1,10 +1,10 @@
 {
   "name": "auto-tools",
-  "version": "0.0.3",
-  "port-version": 0,
+  "version-string": "0.0.3",
+  "port-version": 1,
   "description": "一个自动化工具库，包含了各种使用自动化的函数和类",
   "homepage": "https://github.com/Chaojimengnan/auto-tools",
-  "supports":"windows",
+  "supports": "windows",
   "dependencies": [
     "my-windows",
     {
