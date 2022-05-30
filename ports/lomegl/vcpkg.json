@@ -1,20 +1,21 @@
 {
-  "name": "lomegl",
-  "version": "0.0.1",
-  "port-version": 0,
-  "description": "This is lomekragow's OpenGL wrapper library",
-  "homepage": "https://github.com/Chaojimengnan/lomegl",
-  "dependencies": [
-    "lotools",
-    "glm",
-    "glad"
-  ],
-  "features": {
-    "glfw": {
-      "description": "Enable suporrt library for glfw",
-      "dependencies": [
-        "glfw3"
-      ]
-    }
-  }
+    "name": "lomegl",
+    "version": "0.0.1",
+    "port-version": 0,
+    "description": "This is lomekragow's OpenGL wrapper library",
+    "homepage": "https://github.com/Chaojimengnan/lomegl",
+    "dependencies": [
+        "lotools",
+        "glm",
+        "glad"
+    ],
+    "features": {
+        "glfw": {
+            "description": "Enable suporrt library for glfw",
+            "dependencies": [
+                "glfw3"
+            ]
+        }
+    },
+    "version-string": "0.0.2"
 }
