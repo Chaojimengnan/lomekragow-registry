@@ -13,7 +13,7 @@
             "port-version": 2
         },
         "lotools": {
-            "baseline": "0.1.7",
+            "baseline": "0.1.8",
             "port-version": 0
         },
         "lomegl": {
