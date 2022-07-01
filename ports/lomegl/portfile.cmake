@@ -18,8 +18,8 @@ vcpkg_configure_cmake(
     SOURCE_PATH ${SOURCE_PATH}
     PREFER_NINJA
     OPTIONS
-        ${FEATURE_OPTIONS}          # 之前获取的feature列表
-        -DLOMEGL_BUILD_TEST=OFF     # 不编译测试代码
+        ${FEATURE_OPTIONS}                   # 之前获取的feature列表
+        -DLOMEGL_BUILD_LEARN_EXAMPLE=OFF     # 不编译测试代码
 )
 
 # 构建并安装
