@@ -1,7 +1,7 @@
 {
     "name": "lomegl",
-    "port-version": 1,
-    "version-string": "0.1.1",
+    "port-version": 0,
+    "version-string": "0.1.2",
     "description": "This is lomekragow's OpenGL wrapper library",
     "homepage": "https://github.com/Chaojimengnan/lomegl",
     "dependencies": [
